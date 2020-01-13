@@ -1,0 +1,90 @@
+.big-button {
+  background: $purple;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.6rem solid darken($purple, $amount: 10%);
+  //border: none;
+  border-radius: 25px;
+  outline: none;
+  //border-bottom: 0.6rem solid darken($purple, $amount: 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+.big-button:hover:enabled {
+  background-color: #a8a4d1;
+  color: white;
+}
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
+.button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, $amount: 10%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+  margin-right: 0;
+}
+
+.button--link {
+  background: rgb(250, 247, 247);
+  border: none;
+  color: $light-green;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  transition-duration: 0.4s;
+  outline: none;
+}
+.RemoveAll {
+  background-color: rgb(250, 247, 247);
+  padding: 5px;
+  color: rgb(87, 87, 87);
+  border: 2px solid $purple;
+  border-radius: 8px;
+}
+.RemoveAll:hover {
+  background-color: $purple;
+  color: white;
+}
+
+.Remove {
+  background-color: rgb(250, 247, 247);
+  padding: 5px;
+  color: rgb(87, 87, 87);
+  border: 2px solid $purple;
+  border-radius: 8px;
+  max-height: 35px;
+  //margin: 20px 0;
+}
+.Remove:hover {
+  background-color: #a8a4d1;
+  color: white;
+  border: 2px solid #a8a4d1;
+}
+.Okey {
+  background-color: rgb(250, 247, 247);
+  padding: 5px;
+  color: rgb(87, 87, 87);
+  border: 2px solid $purple;
+  border-radius: 8px;
+  max-height: 35px;
+}
+.Okey:hover {
+  background-color: $purple;
+  color: white;
+  border: 2px solid #a8a4d1;
+}
