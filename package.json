@@ -1,7 +1,11 @@
 {
-  "name": "udemy-one",
+  "name": "indecision",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "13.3.0",
+    "npm": "6.13.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -20,13 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-<<<<<<< HEAD
-  "resolutions": { 
-    "serialize-javascript": "^2.1.1" 
-=======
   "resolutions": {
     "serialize-javascript": "^2.1.1"
->>>>>>> dependecies
   },
   "eslintConfig": {
     "extends": "react-app"
