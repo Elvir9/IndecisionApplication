@@ -7,14 +7,18 @@
   //border: none;
   border-radius: 25px;
   outline: none;
-  //border-bottom: 0.6rem solid darken($purple, $amount: 10%);
+  //border-bottom:0.6remsoliddarken($purple,$amount: 10%);
   color: white;
   font-weight: bold;
   font-size: $l-size;
   margin-bottom: $m-size;
-
+  transition: background-color 0.5s, color 0.5s;
   padding: 2.4rem;
   width: 100%;
+  -webkit-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
 }
 
 .big-button:disabled {
@@ -37,6 +41,20 @@
   font-weight: 500;
   padding: $s-size;
   margin-right: 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: darken($purple, $amount: 10%);
 }
 
 .button--link {
