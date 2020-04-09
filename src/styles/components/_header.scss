@@ -1,14 +1,39 @@
 .header {
-  background: $off-blue;
+  //background: $off-blue;
+  // background: linear-gradient(to bottom left, #5c54a4 22%, #ffd5c3 100%);
+  // background: linear-gradient(to top right, #654ea3, #eaafc8);
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: rgb(255, 213, 195);
   margin-bottom: $m-size;
-  padding: $m-size 0;
+  padding: $xl-size 0;
+  //border-bottom-right-radius: ;
+  //border-bottom-left-radius: 25%;
+  //border-bottom-right-radius: 25%;
+  //border-top-right-radius: 300%;
+  border-radius:0 0 0% 80%;
+  transition: border-top-right-radius 0.6s, border-bottom-left-radius 0.6s ease-in-out;
+  -webkit-transition: border-top-right-radius 0.6s, border-bottom-left-radius 0.6s ease-in-out;
+  -moz-transition: border-top-right-radius 0.6s, border-bottom-left-radius 0.6s ease-in-out;
+  -ms-transition: border-top-right-radius 0.6s, border-bottom-left-radius 0.6s ease-in-out;
+  -o-transition: border-top-right-radius 0.6s, border-bottom-left-radius 0.6s ease-in-out;
+  -webkit-border-radius:0 0 0% 80%;
+  -moz-border-radius:0 0 0% 80%;
+  -ms-border-radius:0 0 0% 80%;
+  -o-border-radius:0 0 0% 80%;
 }
+
+.header:hover {
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%;
+
+}
+
 //BEM --> block element modifier (konvencija)
 .header__title {
-  font-size: 3$l-size;
+  font-size: $xl-size;
   margin: 0;
   margin-bottom: 0.5rem;
+
 }
 
 .header__subtitle {
@@ -17,6 +42,7 @@
   font-weight: 500;
   margin: 0;
 }
+
 @media (min-width: $desktop-breakpoint) {
   .header {
     margin-bottom: $xl-size;

@@ -1,5 +1,11 @@
 .widget {
-  background: $widget-back;
+  // background: $widget-back;
+  // background: linear-gradient(to top right, #5c54a4 22%, #a8a4d1 100%);
+  // background: linear-gradient(to top right, #654ea3, #eaafc8);
+    // background: linear-gradient(to bottom right, #654ea3, #eaafc8);
+    background: linear-gradient(to top right, #0f0c29, #302b63, #24243e);
+
+
   margin-bottom: $xl-size;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -7,6 +13,7 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 .widget__message {
   border-bottom: 1px solid lighten($widget-back, $amount: 10);
   color: $color-back;
@@ -14,12 +21,17 @@
   padding: $l-size;
   text-align: center;
 }
+
 .widget-header {
-  background: $blue;
+  // background: $blue;
+
+
   color: $color-back;
   padding: $m-size;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid lighten($widget-back, $amount: 10);
+
   border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;

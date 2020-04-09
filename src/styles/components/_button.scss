@@ -1,9 +1,14 @@
 .big-button {
-  background: $purple;
+  //background: $purple;
+  // background: linear-gradient(to top right, #5c54a4 22%, #ffd5c3 100%);
+background: linear-gradient(to bottom, #23074d, #cc5333);
+
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 0.6rem solid darken($purple, $amount: 10%);
+  //border-bottom:0.6remsoliddarken($purple,$amount: 10%);
+  border-bottom: 0.6rem solid darken($color:#5c54a4, $amount: 13%);
+  //linear-gradient(totopright,#5c54a422%,#a8a4d1100%):;
   //border: none;
   border-radius: 25px;
   outline: none;
@@ -12,29 +17,38 @@
   font-weight: bold;
   font-size: $l-size;
   margin-bottom: $m-size;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background 0.5s ease-in-out;
   padding: 2.4rem;
   width: 100%;
-  -webkit-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
-  -moz-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
-  -ms-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
-  -o-transition: background-color 0.5s, color 0.5s border-bottom 0.5s;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -ms-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
 }
 
 .big-button:disabled {
   opacity: 0.5;
 }
+
 .big-button:hover:enabled {
-  background-color: #a8a4d1;
+  // background-color: #a8a4d1;
+  // background: linear-gradient(to top right, #5c54a4 22%, #a8a4d1 100%);
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+
+  // color: darken($purple, $amount: 30%);
   color: white;
 }
+
 @media (min-width: $desktop-breakpoint) {
   .big-button {
     margin-bottom: $xl-size;
   }
 }
+
 .button {
   background: $purple;
+
   border: none;
   border-bottom: 0.3rem solid darken($purple, $amount: 10%);
   color: white;
@@ -55,6 +69,7 @@
 
 .button:hover {
   background-color: darken($purple, $amount: 10%);
+
 }
 
 .button--link {
@@ -67,6 +82,7 @@
   transition-duration: 0.4s;
   outline: none;
 }
+
 .RemoveAll {
   background-color: rgb(250, 247, 247);
   padding: 5px;
@@ -74,9 +90,14 @@
   border: 2px solid $purple;
   border-radius: 8px;
 }
+
 .RemoveAll:hover {
-  background-color: $purple;
+  // background-color: $purple;
+  // background-color: #A8A4D1;
+  background-color: lighten($color: #AC82B6, $amount: 2%);
   color: white;
+  border: 2px solid #a8a4d1;
+
 }
 
 .Remove {
@@ -88,11 +109,14 @@
   max-height: 35px;
   //margin: 20px 0;
 }
+
 .Remove:hover {
-  background-color: #a8a4d1;
+  // background-color: #a8a4d1;
+  background-color: #c090bc;
   color: white;
   border: 2px solid #a8a4d1;
 }
+
 .Okey {
   background-color: rgb(250, 247, 247);
   padding: 5px;
@@ -101,6 +125,7 @@
   border-radius: 8px;
   max-height: 35px;
 }
+
 .Okey:hover {
   background-color: $purple;
   color: white;
